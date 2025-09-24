@@ -74,7 +74,7 @@ server.get('/api/users/:id', async(req, res) => {
                  
              }
         }catch(err) {
-            res.status(500),json({ message: "The user information could not be modified" })
+            res.status(500).json({ message: "The user information could not be modified" })
         }
     })
 module.exports = server // EXPORT YOUR SERVER instead of {}
